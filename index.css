@@ -1,0 +1,22 @@
+#formdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#unorderedList{
+
+}
+
+
+
+#form {
+
+    display: grid;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 5px;
+
+    width: 300px;
+    height: 400px;
+}
