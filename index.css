@@ -4,12 +4,11 @@
     align-items: center;
 
 }
-#unorderedList{
-
+#img{
+    margin: 20px;
+    margin-left: 25px;
+    padding: auto;
 }
-
-
-
 #form {
 
     display: grid;
