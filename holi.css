@@ -1,0 +1,16 @@
+#holiimage{
+    height: 500px;
+    width: 1150px;
+}
+#header{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(235, 151, 151);
+    overflow: hidden;
+
+}

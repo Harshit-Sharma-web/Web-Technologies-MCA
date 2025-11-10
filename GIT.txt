@@ -1,0 +1,57 @@
+GIT////
+
+git is a version control system that helps developers to track and manage changes 
+to code or file over time.
+
+it allows multiple people to eork on a same project without overwriting each other work
+it keeps a complete history of all changes made so we can go back to the previous version anytime
+
+
+///////////////why we use git///////////////////////////////
+
+1.version control: it track every changes make to the file\
+
+2.collaboration: multiple people can work on the same project at once using branches,seperate work area
+that can later be merged 
+
+3:backup: the full history of your project is store locally or remotely so that our work is safe
+
+4:branchinh and merging: we can create branches to experiment new features,without affecting the main
+ code then merge the changes when ready
+
+5.opensource an widely use : it is a free and use by most company developer worldwide
+
+
+//////////////////////////github setup and configuration/////////////////////////////////////////
+
+1.download and install github
+2.git-version to check git version
+
+
+when we install git for the first time then we tell who we area
+
+3.gitconfig-global user.name " username"
+gitconfig-user.email
+
+
+to check the settings 
+{gitconfig -list}
+
+*to create local repository
+git init
+git add
+git commit
+git status
+when we use git status it shows three files
+untracked files(new files)
+modified(changes file)
+stages(ready to commit)
+to add file \
+git add filename\\
+
+to check history of all commit
+\git log
+
+
+
+

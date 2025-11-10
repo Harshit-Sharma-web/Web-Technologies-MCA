@@ -1,0 +1,22 @@
+body{
+    position: relative;
+
+}
+#formdiv{
+
+display: flex;
+align-items: center;
+justify-content: center;
+padding: auto;
+width: 500px;
+position: relative;
+left: 320px;
+top: 200px;
+}
+#form{
+    gap: 10px 10px;
+
+}
+#fieldset{
+    border: none;
+}
