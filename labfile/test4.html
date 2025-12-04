@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#table{
+    margin-left: 435px;
+}
+#formdiv{
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+   margin-left: 440px;
+   margin-top: 70px;
+   
+}
+#formid{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+    </style>
+</head>
+<body>
+    
+    <table id="table" border="1">
+        <caption>Student Table</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll.no</th>
+            <th>Age</th>
+            <th>Mobile.no</th>
+            <th>salary</th>
+        </tr>
+        <tr>
+            <td>harshit sharma</td>
+            <td>97</td>
+            <td>22</td>
+            <td>999xxxxx</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>C2</td>
+            <td>99</td>
+            <td>22</td>
+            <td>9027xxxx</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>priyanshu</td>
+            <td>100</td>
+            <td>22</td>
+            <td>895735852026</td>
+        </tr>
+    </table><br>
+
+    <div id="formdiv">
+<form id="formid" action="action.php">
+
+<label for="Name">Enter your name:</label>
+<input type="text" placeholder="Name" required><br>
+
+<label for="age">Enter your age:</label>
+<input type="number" placeholder="Age" required><br>
+
+<label for="Mobile">Enter your number:</label>
+<input type="tel" placeholder="number" required ><br>
+
+<label for="email">Enter your email:</label>
+<input type="email" placeholder="email" required><br>
+<input type="submit" name="submit" id="submit">
+
+
+
+    </form>
+    </div>
+    
+</body>
+</html>
