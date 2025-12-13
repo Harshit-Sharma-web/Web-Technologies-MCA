@@ -1,50 +1,231 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Landing Page</title>
+
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav {
+            background: #1e1e1e;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+            transition: 0.3s;
+        }
+
+        .banner {
+            background: url('https://images.pexels.com/photos/7772526/pexels-photo-7772526.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner h1 {
+            color: white;
+            font-size: 50px;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+
+        .feature-box {
+            background: rgb(245, 174, 174);
+            color: white;
+            padding: 20px;
+            width: 28%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+
+        .price-card {
+            background:  rgb(245, 174, 174);
+            color: whitesmoke;
+            padding: 20px;
+            width: 28%;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .price-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin: 10px 0;
+            color: #9f6003;
+        }
+
+        .btn {
+            background: #fd2b7c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #855103;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e1e;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .features,
+            .pricing {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-box,
+            .price-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .banner h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 10px;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+
 </head>
 <body>
-    <table  cellpadding="0" cellpadding="0" border="1" border-collapse:collapse;>
-        <caption><b>Student Information</b></caption>
-        <thead colspan="3">
-        <tr>
-            <th>Student Name</th>
-            <th>Roll Number</th>
-            <th>Department</th>
-            <th>Marks</th>
-            <th>Grade</th>
-        </tr>
-        
-        </thead>
 
-        
-    <tbody>
-<tr>
-    <td>Aditi Sharma</td>
-    <td>101</td>
-    <td>IT</td>
-    <td>88</td>
-    <td>A</td>
-</tr>
-<tr>
-    <td>Rahul Mehta</td>
-    <td>102</td>
-    <td>CSE</td>
-    <td>76</td>
-    <td>B</td>
-</tr>
+    <nav>
+        <div class="logo">SmartProduct</div>
+        <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-<tr>
-    <td>Neha Singh</td>
-    <td>103</td>
-    <td>ECE</td>
-    <td>92</td>
-    <td>A+</td>
-    
-</tr>
-    </tbody>
-    </table>
+    <section class="banner">
+        <h1>Click Happiness</h1>
+    </section>
+
+    <h2 id="features">Amazing Features</h2>
+    <section class="features">
+        <div class="feature-box">
+            <h3>Better Frames</h3>
+            <p>Optimized Image Processing.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Premium Quality</h3>
+            <p>Night Mode & Image Rendering Support.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>User Friendly</h3>
+            <p>Ip89 Rating With Rotary Glass For Water Droplet Protection.</p>
+        </div>
+    </section>
+
+    <h2 id="pricing">Lens</h2>
+    <section class="pricing">
+
+        <div class="price-card">
+            <h3>Basic</h3>
+            <p class="price">$320</p>
+            <p>300mm.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <div class="price-card">
+            <h3>Standard</h3>
+            <p class="price">$1900</p>
+            <p>500mm.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <div class="price-card">
+            <h3>Premium</h3>
+            <p class="price">$4790</p>
+            <p>800mm.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        © 2025 SmartProduct | All Rights Reserved <br>
+        <p>Photography is more than a hobby—it’s an art. 
+            OSCAR Photography is built by photography lovers for photography lovers. 
+            From the latest cameras and lenses to must-have accessories, 
+            we bring you the best tools to turn your vision into reality.
+             Your creativity deserves the right gear, and we’re here to provide it.</p>
+    </footer>
+
 </body>
 </html>
