@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haye Garmi - Full Menu</title>
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #F8F4E3;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: serif;
+            color: #A3331C;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #A3331C;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #A3331C;
+            padding: 15px 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            font-weight: 400;
+            padding: 5px 10px;
+            transition: color 0.3s, border-bottom 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #E2B258;
+            border-bottom: 2px solid #E2B258;
+        }
+        
+        main section {
+            padding: 80px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .full-menu-section {
+            padding-top: 50px;
+            max-width: 900px; 
+            margin: 0 auto;
+        }
+
+        .menu-page-title {
+            text-align: center;
+            margin-bottom: 2em;
+            color: #A3331C;
+        }
+
+        .menu-category {
+            margin-bottom: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #ffffff; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .category-header {
+            font-size: 2em;
+            color: #E2B258;
+            border-bottom: 3px solid #A3331C;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .menu-list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .menu-item-full {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .menu-item-full:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item-full h4 {
+            margin: 0;
+            font-size: 1.3em;
+            color: #A3331C;
+        }
+
+        .menu-item-full p {
+            margin-top: 5px;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .menu-item-full .price {
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #E2B258;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+
+        .menu-item-full.highlighted {
+            background-color: #fff9f0; 
+            padding: 10px 15px;
+            margin: -10px -15px; 
+            border-radius: 5px;
+        }
+        
+        footer {
+            background-color: #A3331C;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            .nav-links li {
+                margin: 0;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .menu-item-full {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .menu-item-full .price {
+                text-align: right;
+                font-size: 1.1em;
+                margin-left: 0;
+                margin-top: 5px;
+            }
+            .menu-category {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Haye Garmi { The Restaurant }</div>
+            <ul class="nav-links">
+                <li><a href="Restaurant.html">Home</a></li>
+                <li><a href="Restaurant.html">About Us</a></li>
+                <li><a href="full_menu.html" class="active">Menu</a></li>
+                                <li><a href="branches.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="full-menu" class="full-menu-section">
+            <h2 class="menu-page-title">Our Complete Offering</h2>
+
+            <div class="menu-category">
+                <h3 class="category-header">Appetizers / Starters</h3>
+                <div class="menu-list-container">
+                    <div class="menu-item-full">
+                        <div class="item-details">
+                            <h4>Samosa Chaat</h4>
+                            <p>Crispy samosas crushed and topped with yogurt, chutneys, and savory spices.</p>
+                        </div>
+                        <p class="price">₹10</p>
+                    </div>
+                    
+                    <div class="menu-item-full">
+                        <div class="item-details">
+                            <h4>Paneer Tikka</h4>
+                            <p>Cubes of paneer marinated in yogurt and spices, grilled to perfection in the tandoor.</p>
+                        </div>
+                        <p class="price">₹45</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="category-header">Vegetarian Mains</h3>
+                <div class="menu-list-container">
+                    
+                    
+                    <div class="menu-item-full">
+                        <div class="item-details">
+                            <h4>Aloo Gobi</h4>
+                            <p>A classic dry curry featuring cauliflower florets and potatoes tossed in turmeric, cumin, and fragrant spices. A hearty favorite.</p>
+                        </div>
+                        <p class="price">₹30</p>
+                    </div>
+                    
+                    <div class="menu-item-full">
+                        <div class="item-details">
+                            <h4>Chole Bhature</h4>
+                            <p>Puffy, soft fried bread (Bhature) served with a spicy, tangy chickpea curry (Chole). An iconic street food dish.</p>
+                        </div>
+                        <p class="price">₹50</p>
+                    </div>
+                    
+                    <div class="menu-item-full">
+                        <div class="item-details">
+                            <h4>Dal Makhani</h4>
+                            <p>Black lentils and kidney beans slow-cooked overnight and finished with cream and butter.</p>
+                        </div>
+                        <p class="price">₹60</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <h3 class="category-header">Desserts</h3>
+                <div class="menu-list-container">
+                    <div class="menu-item-full highlighted">
+                        <div class="item-details">
+                            <h4>Gulab Jamun (Featured)</h4>
+                            <p>Soft, spongy dumplings soaked in rose and cardamom sugar syrup. Served warm.</p>
+                        </div>
+                        <p class="price">₹80</p>
+                    </div>
+
+                    <div class="menu-item-full">
+                        <div class="item-details">
+                            <h4>Kulfi Falooda</h4>
+                            <p>Traditional Indian ice cream flavored with pistachio and saffron, served with vermicelli noodles.</p>
+                        </div>
+                        <p class="price">₹45</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Haye Garmi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
